@@ -1,0 +1,13 @@
+name: Test
+
+on: push
+
+jobs:
+  test-itself:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./
+        id: itself
+        with:
+          name: shirakiya

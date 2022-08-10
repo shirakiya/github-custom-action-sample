@@ -1,0 +1,12 @@
+{
+  "name": "github-custom-action-sample",
+  "description": "My sample custom action for GitHub Actions",
+  "main": "dist/main.js",
+  "repository": "github:shirakiya/github-custom-action-sample",
+  "author": "shirakiya <shirakiya.pv@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3"
+  }
+}

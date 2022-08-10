@@ -1,0 +1,11 @@
+name: GitHub Custom Action Sample
+author: shirakiya
+description: My sample custom action for GitHub Actions
+inputs:
+  name:
+    description: The name
+    required: false
+    default: hogefuga
+runs:
+  using: node16
+  main: dist/main.js
