@@ -6,7 +6,7 @@ const run = async () => {
   const name = core.getInput("name");
   console.log(`Hello ${name}!`);
 
-  const globber = await glob.create("**");
+  const globber = await glob.create("**/README.md");
   const files = await globber.glob();
   console.dir(files, { depth: null });
 
