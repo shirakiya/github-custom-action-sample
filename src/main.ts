@@ -1,7 +1,7 @@
-import core from "@actions/core"
-import github from "@actions/github"
-import glob from "@actions/glob"
-import exec from "@actions/exec"
+import * as core from "@actions/core"
+import * as github from "@actions/github"
+import * as glob from "@actions/glob"
+import * as exec from "@actions/exec"
 
 const run = async () => {
   const name = core.getInput("name")

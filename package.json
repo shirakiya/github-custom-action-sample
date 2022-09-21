@@ -1,14 +1,15 @@
 {
   "name": "github-custom-action-sample",
   "description": "My sample custom action for GitHub Actions",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "repository": "github:shirakiya/github-custom-action-sample",
   "author": "shirakiya <shirakiya.pv@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write '**/*.{js,ts}'",
-    "format:check": "prettier --check '**/*.{js,ts}'"
+    "format:check": "prettier --check '**/*.{js,ts}'",
+    "package": "ncc build --source-map --license licenses.txt"
   },
   "dependencies": {
     "@actions/core": "^1.9.1",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.7.18",
+    "@vercel/ncc": "^0.34.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3"
   }
