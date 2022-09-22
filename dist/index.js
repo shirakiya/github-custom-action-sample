@@ -13270,7 +13270,7 @@ const run = () => __awaiter(void 0, void 0, void 0, function* () {
                 },
                 cwd: file.replace("README.md", ""),
             };
-            yield exec.exec("tree", ["."], options);
+            yield exec.exec("tree", ["--noreport", "."], options);
             console.log("stdout: ", stdout);
             console.log("stderr: ", stderr);
         }

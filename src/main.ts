@@ -33,7 +33,7 @@ const run = async () => {
       cwd: file.replace("README.md", ""),
     }
 
-    await exec.exec("tree", ["."], options)
+    await exec.exec("tree", ["--noreport", "."], options)
 
     console.log("stdout: ", stdout)
     console.log("stderr: ", stderr)
