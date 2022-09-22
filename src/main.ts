@@ -4,6 +4,8 @@ import * as glob from "@actions/glob"
 import * as exec from "@actions/exec"
 
 const run = async () => {
+  console.log("test change")
+
   const name = core.getInput("name")
   console.log(`Hello ${name}!`)
 
